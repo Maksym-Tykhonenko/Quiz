@@ -2,10 +2,10 @@ import React, { useState, useRef, useEffect } from 'react';
 import {View, Text, ImageBackground, TouchableOpacity, ScrollView, SafeAreaView, Modal, TextInput , Image} from 'react-native';
 import Entypo from 'react-native-vector-icons/Entypo';
 
-import { germanHotels } from '../data/germanHotels';
+import { german } from '../data/german';
 
 const LvlGermany = ({ navigation }) => {
-    const [startMassiv, setStartMassiv] = useState(germanHotels);
+    const [startMassiv, setStartMassiv] = useState(german);
     const [sights, setSights] = useState(startMassiv);
     console.log('sights', sights.length);
     const [sightsImg, setSightsImg] = useState(startMassiv);
@@ -91,7 +91,7 @@ const LvlGermany = ({ navigation }) => {
 
                         {/* Блок кнопок з назвами */}
                         <View style={{ flex: 0.5, alignItems: 'center' }}>
-                            <Text style={{ marginLeft: 20, marginBottom: 10, color: '#f5c65d', fontWeight: 'bold', fontSize: 20 }}>Categories: </Text>
+                            <Text style={{ marginLeft: 20, marginBottom: 10, color: '#f5c65d', fontWeight: 'bold', fontSize: 20 }}>Categories </Text>
                         
                             <ScrollView>
                             
@@ -107,7 +107,7 @@ const LvlGermany = ({ navigation }) => {
                                             height: 135,
                                             borderWidth: 1,
                                             borderRadius: 15,
-                                            backgroundColor: actButnTitle === item.id ? 'green' : '#0395e0',
+                                            backgroundColor: actButnTitle === item.id ? 'green' : '#f5c65d',
                                             alignItems: 'center',
                                             justifyContent: 'center',
                                             padding: 5,
@@ -127,7 +127,7 @@ const LvlGermany = ({ navigation }) => {
                         {/* Блок зображень */}
                         <View style={{ flex: 0.5, alignItems: 'center' }}>
 
-                            <Text style={{ marginBottom: 10, color: '#f5c65d', fontWeight: 'bold', fontSize: 20 }}>Photos: </Text>
+                            <Text style={{ marginBottom: 10, color: '#f5c65d', fontWeight: 'bold', fontSize: 20 }}>Photos </Text>
 
                             <ScrollView>
               
@@ -170,7 +170,7 @@ const LvlGermany = ({ navigation }) => {
                     {/**Go Back BTN */}
                     <TouchableOpacity
                         onPress={() => { navigation.goBack() }}
-                        style={{ position: 'absolute', bottom: 15, right: 15, borderWidth: 3, borderRadius: 10, height: 60, width: 60, justifyContent: "center", alignItems: "center", borderColor: '#f5c65d', }}>
+                        style={{ position: 'absolute', bottom: 15, right: 15, borderWidth: 3, borderRadius: 10, height: 60, width: 60, justifyContent: "center", alignItems: "center", borderColor: '#f5c65d',backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
                         <Text style={{ color: '#f5c65d', fontWeight: '600' }}>Go</Text>
                         <Text style={{ color: '#f5c65d', fontWeight: '600' }}>back</Text>
                     </TouchableOpacity>

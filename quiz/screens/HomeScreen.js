@@ -85,22 +85,27 @@ const HomeScreen = ({ navigation }) => {
                 <ImageBackground
                     source={require('../assets/bgrQuiz.jpeg')}
                     style={{ flex: 1 }}>
-                    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+                    <View style={{ flex: 1, position: 'relative', alignItems: 'center', justifyContent: 'center' }}>
                     
                         <View>
                             <TouchableOpacity
                                 onPress={() => { navigation.navigate('SelectLvl') }}
-                                style={{ borderWidth: 3, borderRadius: 10, paddingHorizontal: 20, marginHorizontal: 7, height: 50, width: 250, justifyContent: "center", alignItems: "center", marginBottom: 25,marginTop: -20, borderColor: '#f5c65d', }}>
+                                style={{ borderWidth: 3, borderRadius: 10, paddingHorizontal: 20, marginHorizontal: 7, height: 50, width: 250, justifyContent: "center", alignItems: "center", marginBottom: 25, marginTop: -20, borderColor: '#f5c65d', }}>
                                 <Text style={{ color: '#f5c65d', fontSize: 23, fontWeight: '600' }}>GAME</Text>
                             </TouchableOpacity>
 
-                                <TouchableOpacity 
-                                    onPress={() => { navigation.navigate('Rules') }}
-                                    style={{ borderWidth: 3, borderRadius: 10, paddingHorizontal: 20, marginHorizontal: 7, height: 50, width: 250, justifyContent: "center", alignItems: "center", marginBottom: 15, borderColor: '#f5c65d', }}>
+                            <TouchableOpacity
+                                onPress={() => { navigation.navigate('Rules') }}
+                                style={{ borderWidth: 3, borderRadius: 10, paddingHorizontal: 20, marginHorizontal: 7, height: 50, width: 250, justifyContent: "center", alignItems: "center", marginBottom: 15, borderColor: '#f5c65d', }}>
                                 <Text style={{ color: '#f5c65d', fontSize: 23, fontWeight: '600' }}>RULSE</Text>
                             </TouchableOpacity>
+                                
+
+                            
                         </View>
-                    
+                            
+
+                        
                     </View>
                 
                 </ImageBackground>
