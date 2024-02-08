@@ -1,52 +1,52 @@
 export const USA = [
     {
         id: 1,
-        hotel: `Colosseum`,
-        photo: require('../assets/italy/Colosseum.jpeg'),
+        hotel: `Grand Canyon`,
+        photo: require('../assets/usa/GrandCanyon.jpeg'),
     },
     {
         id: 2,
-        hotel: `St. Peter's Square`,
-        photo: require('../assets/italy/StPetersSquare.webp'),
+        hotel: `Statue of Liberty`,
+        photo: require('../assets/usa/StatueLiberty.webp'),
     },
     {
         id: 3,
-        hotel: `Leaning Tower of Pisa`,
-        photo: require('../assets/italy/LeaningTowerPisa.jpeg'),
+        hotel: `New York City Skyline`,
+        photo: require('../assets/usa/NewYorkCitySkyline.jpeg'),
     },
     {
         id: 4,
-        hotel: 'Cattedrale di Santa Maria',
-        photo: require('../assets/italy/CattedralediSantaMaria.jpeg'),
+        hotel: 'Mount Rushmore National Memorial',
+        photo: require('../assets/usa/MountRushmore.jpeg'),
     },
     {
         id: 5,
-        hotel: 'Uffizi Gallery',
-        photo: require('../assets/italy/UffiziGallery.webp'),
+        hotel: 'Yosemite Valley',
+        photo: require('../assets/usa/YosemiteValley.jpeg'),
     },
     {
         id: 6,
-        hotel: `Grand Canal`,
-        photo: require('../assets/italy/GrandCanal.jpeg'),
+        hotel: `Horseshoe Bend`,
+        photo: require('../assets/usa/HorseshoeBend.jpeg'),
     },
     {
         id: 7,
-        hotel: 'Pompeii',
-        photo: require('../assets/italy/Pompeii.jpeg'),
+        hotel: 'Jackson Hole',
+        photo: require('../assets/usa/JacksonHole.jpeg'),
     },
     {
         id: 8,
-        hotel: 'Villa Borghese',
-        photo: require('../assets/italy/VillaBorghese.jpeg'),
+        hotel: 'Hawaiian Islands',
+        photo: require('../assets/usa/HawaiianIslands.jpeg'),
     },
     {
         id: 9,
-        hotel: `Cinque Terre`,
-        photo: require('../assets/italy/CinqueTerre.jpeg'),
+        hotel: `Grand Teton National Park`,
+        photo: require('../assets/usa/GrandTetonNationalPark.jpeg'),
     },
     {
         id: 10,
-        hotel: 'Sistine Chapel',
-        photo: require('../assets/italy/SistineChapel.jpeg'),
+        hotel: 'Route 66',
+        photo: require('../assets/usa/Route66.jpeg'),
     }
 ];

@@ -1,52 +1,52 @@
-export const spain = [
+export const mexica = [
     {
         id: 1,
-        hotel: `Colosseum`,
-        photo: require('../assets/italy/Colosseum.jpeg'),
+        hotel: `Teotihuacan Pyramids`,
+        photo: require('../assets/mexica/TeotihuacanPyramids.jpeg'),
     },
     {
         id: 2,
-        hotel: `St. Peter's Square`,
-        photo: require('../assets/italy/StPetersSquare.webp'),
+        hotel: `Chichen Itza`,
+        photo: require('../assets/mexica/ChichenItza.jpeg'),
     },
     {
         id: 3,
-        hotel: `Leaning Tower of Pisa`,
-        photo: require('../assets/italy/LeaningTowerPisa.jpeg'),
+        hotel: `Mayan Riviera`,
+        photo: require('../assets/mexica/MayanRiviera.jpeg'),
     },
     {
         id: 4,
-        hotel: 'Cattedrale di Santa Maria',
-        photo: require('../assets/italy/CattedralediSantaMaria.jpeg'),
+        hotel: 'Zocalo',
+        photo: require('../assets/mexica/Zocalo.jpeg'),
     },
     {
         id: 5,
-        hotel: 'Uffizi Gallery',
-        photo: require('../assets/italy/UffiziGallery.webp'),
+        hotel: 'Tulum',
+        photo: require('../assets/mexica/Tulum.jpeg'),
     },
     {
         id: 6,
-        hotel: `Grand Canal`,
-        photo: require('../assets/italy/GrandCanal.jpeg'),
+        hotel: `National Museum of Anthropology`,
+        photo: require('../assets/mexica/NationalMuseumAnthropology.jpeg'),
     },
     {
         id: 7,
-        hotel: 'Pompeii',
-        photo: require('../assets/italy/Pompeii.jpeg'),
+        hotel: 'Oaxaca Coast',
+        photo: require('../assets/mexica/OaxacaCoast.jpeg'),
     },
     {
         id: 8,
-        hotel: 'Villa Borghese',
-        photo: require('../assets/italy/VillaBorghese.jpeg'),
+        hotel: 'Copper Canyon',
+        photo: require('../assets/mexica/CopperCanyon.jpeg'),
     },
     {
         id: 9,
-        hotel: `Cinque Terre`,
-        photo: require('../assets/italy/CinqueTerre.jpeg'),
+        hotel: `San Miguel de Allende`,
+        photo: require('../assets/mexica/SanMiguelAllende.webp'),
     },
     {
         id: 10,
-        hotel: 'Sistine Chapel',
-        photo: require('../assets/italy/SistineChapel.jpeg'),
+        hotel: 'Cabo Pulmo National Park',
+        photo: require('../assets/mexica/CaboPulmoNationalPark.jpeg'),
     }
 ];

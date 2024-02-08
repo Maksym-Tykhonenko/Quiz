@@ -90,13 +90,13 @@ const HomeScreen = ({ navigation }) => {
                         <View>
                             <TouchableOpacity
                                 onPress={() => { navigation.navigate('SelectLvl') }}
-                                style={{ borderWidth: 3, borderRadius: 3, paddingHorizontal: 20, marginHorizontal: 7, height: 50, width: 250, justifyContent: "center", alignItems: "center", marginBottom: 25, marginTop: -20, borderColor: '#f5c65d', }}>
+                                style={{ borderWidth: 3, borderRadius: 3, paddingHorizontal: 20, marginHorizontal: 7, height: 50, width: 250, justifyContent: "center", alignItems: "center", marginBottom: 25, marginTop: -20, borderColor: '#f5c65d',backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
                                 <Text style={{ color: '#f5c65d', fontSize: 23, fontWeight: '600' }}>GAME</Text>
                             </TouchableOpacity>
 
                             <TouchableOpacity
                                 onPress={() => { navigation.navigate('Rules') }}
-                                style={{ borderWidth: 3, borderRadius: 3, paddingHorizontal: 20, marginHorizontal: 7, height: 50, width: 250, justifyContent: "center", alignItems: "center", marginBottom: 15, borderColor: '#f5c65d', }}>
+                                style={{ borderWidth: 3, borderRadius: 3, paddingHorizontal: 20, marginHorizontal: 7, height: 50, width: 250, justifyContent: "center", alignItems: "center", marginBottom: 15, borderColor: '#f5c65d',backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
                                 <Text style={{ color: '#f5c65d', fontSize: 23, fontWeight: '600' }}>RULSE</Text>
                             </TouchableOpacity>
                                 

@@ -1,52 +1,52 @@
 export const india = [
     {
         id: 1,
-        hotel: `Colosseum`,
-        photo: require('../assets/italy/Colosseum.jpeg'),
+        hotel: `Taj Mahal`,
+        photo: require('../assets/india/TajMahal.jpeg'),
     },
     {
         id: 2,
-        hotel: `St. Peter's Square`,
-        photo: require('../assets/italy/StPetersSquare.webp'),
+        hotel: `Ganges River`,
+        photo: require('../assets/india/GangesRiver.jpeg'),
     },
     {
         id: 3,
-        hotel: `Leaning Tower of Pisa`,
-        photo: require('../assets/italy/LeaningTowerPisa.jpeg'),
+        hotel: `Hawa Mahal`,
+        photo: require('../assets/india/HawaMahal.jpeg'),
     },
     {
         id: 4,
-        hotel: 'Cattedrale di Santa Maria',
-        photo: require('../assets/italy/CattedralediSantaMaria.jpeg'),
+        hotel: 'Mysore Palace',
+        photo: require('../assets/india/MysorePalace.jpeg'),
     },
     {
         id: 5,
-        hotel: 'Uffizi Gallery',
-        photo: require('../assets/italy/UffiziGallery.webp'),
+        hotel: 'Karnataka',
+        photo: require('../assets/india/Karnataka.jpeg'),
     },
     {
         id: 6,
-        hotel: `Grand Canal`,
-        photo: require('../assets/italy/GrandCanal.jpeg'),
+        hotel: `Bollywood`,
+        photo: require('../assets/india/Bollywood.jpg'),
     },
     {
         id: 7,
-        hotel: 'Pompeii',
-        photo: require('../assets/italy/Pompeii.jpeg'),
+        hotel: 'Kipi',
+        photo: require('../assets/india/Kipi.jpeg'),
     },
     {
         id: 8,
-        hotel: 'Villa Borghese',
-        photo: require('../assets/italy/VillaBorghese.jpeg'),
+        hotel: 'Great Buddha Statue',
+        photo: require('../assets/india/GreatBuddhaStatue.jpeg'),
     },
     {
         id: 9,
-        hotel: `Cinque Terre`,
-        photo: require('../assets/italy/CinqueTerre.jpeg'),
+        hotel: `Golconda Fort`,
+        photo: require('../assets/india/GolcondaFort.jpeg'),
     },
     {
         id: 10,
-        hotel: 'Sistine Chapel',
-        photo: require('../assets/italy/SistineChapel.jpeg'),
+        hotel: 'Sonmarg',
+        photo: require('../assets/india/Sonmarg.jpeg'),
     }
 ];

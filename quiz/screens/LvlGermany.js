@@ -1,13 +1,14 @@
 import React, { useState, useRef, useEffect } from 'react';
 import {View, Text,Alert, Button, ImageBackground, TouchableOpacity, ScrollView, SafeAreaView, Modal, TextInput , Image} from 'react-native';
 import Entypo from 'react-native-vector-icons/Entypo';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { german } from '../data/german';
 
 const LvlGermany = ({ navigation }) => {
     const [startMassiv, setStartMassiv] = useState(german);
     const [sights, setSights] = useState(startMassiv);
-    //console.log('sights', sights.length);
+    console.log('sights', sights.length);
     const [sightsImg, setSightsImg] = useState(startMassiv);
     //console.log('sightsImg', sightsImg.length)
     const [shuffledSightsImg, setShuffledSightsImg] = useState([]);
@@ -16,6 +17,49 @@ const LvlGermany = ({ navigation }) => {
     const [isRuning, setIsRuning] = useState(true);
     //console.log(timer)
     const [btnbifireStartGameIsVisible, setBtnbifireStartGameIsVisible] = useState(true);
+    const [lvl2isAnlock, setLvl2isAnlock] = useState(false);
+    console.log('lvl2isAnlock==>', lvl2isAnlock)
+
+    useEffect(() => {
+        getData();
+    }, []);
+
+    useEffect(() => {
+        setData();
+    }, [lvl2isAnlock]);
+
+    const setData = async () => {
+        try {
+            const data = {
+                lvl2isAnlock,
+            }
+            const jsonData = JSON.stringify(data);
+            await AsyncStorage.setItem("LvlGermany", jsonData);
+            console.log('Дані збережено в AsyncStorage')
+        } catch (e) {
+            console.log('Помилка збереження даних:', e);
+        }
+    };
+
+    const getData = async () => {
+        try {
+            const jsonData = await AsyncStorage.getItem('LvlGermany');
+            if (jsonData !== null) {
+                const parsedData = JSON.parse(jsonData);
+                console.log('parsedData==>', parsedData);
+                setLvl2isAnlock(parsedData.lvl2isAnlock);
+        
+            }
+        } catch (e) {
+            console.log('Помилка отримання даних:', e);
+        }
+    };
+
+    useEffect(() => {
+        if (sights.length === 0) {
+            setLvl2isAnlock(true)
+        }
+    }, [sights]);
     
     ///Timer
     //эфект обратного отщета времени
@@ -67,7 +111,7 @@ const LvlGermany = ({ navigation }) => {
     //console.log('==>', actButnTitle, actBtnImg)
     const [btnIsVisible, setBtnIsVisible] = useState(false);
     const [quizIsComplited, setQuizIsComplited] = useState(false);
-    console.log('quizIsComplited==>', quizIsComplited)
+    //console.log('quizIsComplited==>', quizIsComplited)
 
     const goTooAppAfterQuizComplited = () => {
         setBtnIsVisible(false);
@@ -225,16 +269,16 @@ const LvlGermany = ({ navigation }) => {
                         {/* Кнопка перехода на Next Lvl */}
                         {btnIsVisible && <TouchableOpacity
                             onPress={() => { goTooAppAfterQuizComplited() }}
-                            style={{ position: 'absolute', top: '50%', right: 55, alignItems: 'center', justifyContent: 'center', backgroundColor: '#f5c65d', width: 250, height: 80, borderWidth: 2, borderColor: '#f5c65d', borderRadius: 10 }}>
+                            style={{ position: 'absolute', top: '30%', right: 55, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(0, 0, 0, 0.9)', width: 270, height: 120, borderWidth: 2, borderColor: '#f5c65d', borderRadius: 3 }}>
                             
-                            <Text style={{ color: '#000', fontWeight: 'bold', fontSize: 18 }}>Congratulations!!!</Text>
-                            <Text style={{ color: '#000', fontWeight: 'bold', fontSize: 18 }}> Go to next Lvl  <Entypo name='arrow-bold-right' style={{ fontSize: 20 }} /></Text>
+                            <Text style={{ color: '#f5c65d', fontWeight: 'bold', fontSize: 18 }}>Congratulations!!!</Text>
+                            <Text style={{ color: '#f5c65d', fontWeight: 'bold', fontSize: 18 }}> Go to next Lvl  <Entypo name='arrow-bold-right' style={{ fontSize: 20 }} /></Text>
                         </TouchableOpacity>}
 
                         {/* Кнопка start game */}
                         {btnbifireStartGameIsVisible && <TouchableOpacity
                             onPress={() => { setBtnbifireStartGameIsVisible(false) }}
-                            style={{ position: 'absolute', top: '30%', right: 55, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(0, 0, 0, 0.9)', width: 270, height: 120, borderWidth: 2, borderColor: '#f5c65d', borderRadius: 10 }}>
+                            style={{ position: 'absolute', top: '30%', right: 55, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(0, 0, 0, 0.9)', width: 270, height: 120, borderWidth: 2, borderColor: '#f5c65d', borderRadius: 3 }}>
                             <Text style={{ color: '#f5c65d', fontWeight: 'bold', fontSize: 25, marginBottom: 10 }}>Lvl 1 - Germany</Text>
                             <Text style={{ color: '#f5c65d', fontWeight: 'bold', fontSize: 18 }}>Tab on this button</Text>
                             <Text style={{ color: '#f5c65d', fontWeight: 'bold', fontSize: 18 }}>then tab 'PLAY'</Text>

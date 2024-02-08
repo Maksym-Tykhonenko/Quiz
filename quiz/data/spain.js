@@ -1,52 +1,55 @@
+
+{/** */}
 export const spain = [
     {
         id: 1,
-        hotel: `Colosseum`,
-        photo: require('../assets/italy/Colosseum.jpeg'),
+        hotel: `Sagrada Familia`,
+        photo: require('../assets/spain/SagradaFamilia.webp'),
     },
     {
         id: 2,
-        hotel: `St. Peter's Square`,
-        photo: require('../assets/italy/StPetersSquare.webp'),
+        hotel: `Alhambra`,
+        photo: require('../assets/spain/Alhambra.jpeg'),
     },
     {
         id: 3,
-        hotel: `Leaning Tower of Pisa`,
-        photo: require('../assets/italy/LeaningTowerPisa.jpeg'),
+        hotel: `Royal Palace`,
+        photo: require('../assets/spain/RoyalPalace.webp'),
     },
     {
         id: 4,
-        hotel: 'Cattedrale di Santa Maria',
-        photo: require('../assets/italy/CattedralediSantaMaria.jpeg'),
+        hotel: 'Park Güell',
+        photo: require('../assets/spain/parqueGuell.jpeg'),
     },
     {
         id: 5,
-        hotel: 'Uffizi Gallery',
-        photo: require('../assets/italy/UffiziGallery.webp'),
+        hotel: 'Santiago Bernabeu',
+        photo: require('../assets/spain/SantiagoBernabeu.jpeg'),
     },
     {
         id: 6,
-        hotel: `Grand Canal`,
-        photo: require('../assets/italy/GrandCanal.jpeg'),
+        hotel: `Plaza Mayor`,
+        photo: require('../assets/spain/PlazaMayor.jpeg'),
     },
     {
         id: 7,
-        hotel: 'Pompeii',
-        photo: require('../assets/italy/Pompeii.jpeg'),
+        hotel: 'Camp Nou',
+        photo: require('../assets/spain/campNou.webp'),
     },
     {
         id: 8,
-        hotel: 'Villa Borghese',
-        photo: require('../assets/italy/VillaBorghese.jpeg'),
+        hotel: 'Alcázar',
+        photo: require('../assets/spain/Alcazar.jpeg'),
     },
     {
         id: 9,
-        hotel: `Cinque Terre`,
-        photo: require('../assets/italy/CinqueTerre.jpeg'),
+        hotel: `Seville Cathedral`,
+        photo: require('../assets/spain/SevilleCathedral.jpeg'),
     },
     {
         id: 10,
-        hotel: 'Sistine Chapel',
-        photo: require('../assets/italy/SistineChapel.jpeg'),
+        hotel: 'Dalí Theatre-Museum',
+        photo: require('../assets/spain/DalTheatreMuseum.jpeg'),
     }
 ];
+
